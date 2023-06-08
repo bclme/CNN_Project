@@ -1,0 +1,25 @@
+Program Documentation
+This program performs edge detection on an input image, detects contours, groups them, combines close rectangles, removes fully contained rectangles, and saves the final rectangles as separate JPEG files. It also displays the original image with rectangles around the clusters of detected edges.
+
+Requirements
+OpenCV (cv2)
+NumPy (np)
+math
+Make sure these libraries are installed before running the program.
+
+Usage
+1.  Import the required libraries
+2.  Read the original image
+3.  Convert the image to grayscale
+4.  Blur the grayscale image for better edge detection
+5.  Perform Canny Edge Detection
+6.  Find contours in the edge image
+7.  Group contours that are close to each other
+8.  Combine rectangles that are very close to each other
+9.  Remove rectangles that are fully contained within other rectangles
+10. Save the final contours as separate JPEG files
+11. Draw rectangles around final contours and add captions
+12. Display the image with rectangles around the clusters of detected edges
+
+Conclusion
+This program allows you to perform edge detection, contour grouping, rectangle combination, and rectangle removal on an input image. It provides the functionality to save the final rectangles as separate files and visualize the detected edges with rectangles and captions. You can customize various parameters to adjust the behavior and appearance of the program to suit your needs.
